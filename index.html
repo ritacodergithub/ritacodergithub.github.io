@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rita Bind — Android Developer Portfolio. Kotlin, MVVM, Jetpack, Firebase." />
+  <title>Rita Bind · Android Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="grid-overlay"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#home" class="logo">
+      <span class="logo-bracket">&lt;</span>RB<span class="logo-bracket">/&gt;</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="status-pill reveal">
+          <span class="pulse-dot"></span>
+          Available for immediate start · London, UK
+        </div>
+        <h1 class="hero-title reveal">
+          <span class="line">Hi, I'm</span>
+          <span class="line name-gradient">Rita Bind.</span>
+          <span class="line typewriter">
+            <span id="typed"></span><span class="caret">|</span>
+          </span>
+        </h1>
+        <p class="hero-sub reveal">
+          Android Developer crafting scalable, high-performance mobile
+          experiences with <b>Kotlin</b>, <b>MVVM</b>, <b>Jetpack</b> and
+          <b>Firebase</b>. 2.7 years shipping clean, maintainable code.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+          <a href="mailto:ritabind321@gmail.com" class="btn btn-ghost">Contact Me</a>
+        </div>
+        <div class="hero-meta reveal">
+          <div class="meta-item"><span class="meta-num" data-count="2.7">0</span><span class="meta-plus">+</span><span class="meta-label">Years Experience</span></div>
+          <div class="meta-item"><span class="meta-num" data-count="10">0</span><span class="meta-plus">+</span><span class="meta-label">Projects Delivered</span></div>
+          <div class="meta-item"><span class="meta-num" data-count="15">0</span><span class="meta-plus">+</span><span class="meta-label">Tech Skills</span></div>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <span class="section-index">01</span>
+        <h2>About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass reveal tilt">
+          <p>
+            I'm an <b>Android Developer</b> with <b>2.7 years</b> of experience
+            building scalable, high-performance mobile applications. My work
+            spans clean MVVM architectures, resilient REST API integrations,
+            and real-time Firebase-powered features.
+          </p>
+          <p>
+            I care about the details — responsiveness, crash-free sessions,
+            maintainable code, and user experience that feels effortless.
+            Currently based in London and open to new opportunities.
+          </p>
+          <div class="about-tags">
+            <span>🇬🇧 London, UK</span>
+            <span>✅ No sponsorship required</span>
+            <span>⚡ Immediate start</span>
+          </div>
+        </div>
+        <div class="about-side">
+          <div class="glass mini-card reveal tilt">
+            <div class="mini-label">Education</div>
+            <div class="mini-title">B.Sc. Information Technology</div>
+            <div class="mini-meta">Tilak College of Science Commerce and Arts, Vashi, India</div>
+          </div>
+          <div class="glass mini-card reveal tilt">
+            <div class="mini-label">Focus</div>
+            <div class="mini-title">Android · Kotlin · Jetpack</div>
+            <div class="mini-meta">MVVM · Coroutines · Firebase · Retrofit</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <span class="section-index">02</span>
+        <h2>Technical Arsenal</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card glass reveal tilt">
+          <div class="skill-icon">⌨️</div>
+          <h3>Languages</h3>
+          <ul>
+            <li><span>Kotlin</span><div class="bar" data-level="95"><i></i></div></li>
+            <li><span>Java</span><div class="bar" data-level="80"><i></i></div></li>
+          </ul>
+        </div>
+        <div class="skill-card glass reveal tilt">
+          <div class="skill-icon">🤖</div>
+          <h3>Android</h3>
+          <ul>
+            <li><span>Android SDK</span><div class="bar" data-level="92"><i></i></div></li>
+            <li><span>Jetpack (LiveData, ViewModel, Nav)</span><div class="bar" data-level="90"><i></i></div></li>
+            <li><span>Android Studio</span><div class="bar" data-level="95"><i></i></div></li>
+          </ul>
+        </div>
+        <div class="skill-card glass reveal tilt">
+          <div class="skill-icon">🏗️</div>
+          <h3>Architecture</h3>
+          <ul>
+            <li><span>MVVM</span><div class="bar" data-level="93"><i></i></div></li>
+            <li><span>Clean Code Principles</span><div class="bar" data-level="88"><i></i></div></li>
+          </ul>
+        </div>
+        <div class="skill-card glass reveal tilt">
+          <div class="skill-icon">🌐</div>
+          <h3>Networking</h3>
+          <ul>
+            <li><span>REST APIs</span><div class="bar" data-level="90"><i></i></div></li>
+            <li><span>Retrofit</span><div class="bar" data-level="92"><i></i></div></li>
+            <li><span>JSON Parsing</span><div class="bar" data-level="90"><i></i></div></li>
+          </ul>
+        </div>
+        <div class="skill-card glass reveal tilt">
+          <div class="skill-icon">⚡</div>
+          <h3>Async</h3>
+          <ul>
+            <li><span>Kotlin Coroutines</span><div class="bar" data-level="90"><i></i></div></li>
+          </ul>
+        </div>
+        <div class="skill-card glass reveal tilt">
+          <div class="skill-icon">🔥</div>
+          <h3>Firebase</h3>
+          <ul>
+            <li><span>Authentication</span><div class="bar" data-level="92"><i></i></div></li>
+            <li><span>Firestore</span><div class="bar" data-level="90"><i></i></div></li>
+            <li><span>Crashlytics</span><div class="bar" data-level="85"><i></i></div></li>
+          </ul>
+        </div>
+        <div class="skill-card glass reveal tilt">
+          <div class="skill-icon">🎨</div>
+          <h3>UI / UX</h3>
+          <ul>
+            <li><span>Responsive UI</span><div class="bar" data-level="88"><i></i></div></li>
+            <li><span>Material Design</span><div class="bar" data-level="90"><i></i></div></li>
+          </ul>
+        </div>
+        <div class="skill-card glass reveal tilt">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools &amp; More</h3>
+          <ul>
+            <li><span>Git / GitHub</span><div class="bar" data-level="90"><i></i></div></li>
+            <li><span>Debugging</span><div class="bar" data-level="88"><i></i></div></li>
+            <li><span>Performance Tuning</span><div class="bar" data-level="85"><i></i></div></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <span class="section-index">03</span>
+        <h2>Experience</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="glass timeline-card tilt">
+            <div class="timeline-head">
+              <div>
+                <h3>Android Developer</h3>
+                <div class="company">EZO Technology Pvt Ltd · India</div>
+              </div>
+              <div class="timeline-date">Oct 2023 — Apr 2026</div>
+            </div>
+            <ul class="timeline-list">
+              <li>Developed and maintained scalable Android applications using Kotlin and MVVM architecture.</li>
+              <li>Integrated RESTful APIs with Retrofit for efficient, reliable data handling.</li>
+              <li>Implemented Firebase services (Authentication, Firestore) for secure real-time data.</li>
+              <li>Used Kotlin Coroutines to improve responsiveness and background processing.</li>
+              <li>Reduced crashes through targeted debugging and performance optimisation.</li>
+              <li>Designed and enhanced UI/UX to elevate user experience.</li>
+              <li>Collaborated with cross-functional teams to deliver quality features on time.</li>
+            </ul>
+            <div class="tech-chips">
+              <span>Kotlin</span><span>MVVM</span><span>Retrofit</span>
+              <span>Coroutines</span><span>Firebase</span><span>Jetpack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <span class="section-index">04</span>
+        <h2>Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card glass reveal tilt">
+          <div class="project-visual visual-a">
+            <div class="mockup">
+              <div class="mock-top"></div>
+              <div class="mock-row"></div>
+              <div class="mock-row short"></div>
+              <div class="mock-grid">
+                <div></div><div></div><div></div><div></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tag">E-commerce</div>
+            <h3>E-Commerce Android Application</h3>
+            <p>Full-featured shopping app with authentication, product listings and dynamic content powered by REST APIs.</p>
+            <div class="tech-chips">
+              <span>Kotlin</span><span>MVVM</span><span>Retrofit</span><span>Jetpack</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal tilt">
+          <div class="project-visual visual-b">
+            <div class="chat-mock">
+              <div class="bubble in"></div>
+              <div class="bubble out"></div>
+              <div class="bubble in short"></div>
+              <div class="bubble out short"></div>
+              <div class="bubble in"></div>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tag">Real-time</div>
+            <h3>Chat Application — Firebase</h3>
+            <p>Real-time messaging app built with Firestore, secure login via Firebase Auth, and smooth live updates.</p>
+            <div class="tech-chips">
+              <span>Kotlin</span><span>Firestore</span><span>Firebase Auth</span><span>Coroutines</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head reveal">
+        <span class="section-index">05</span>
+        <h2>Let's Build Something</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-wrap glass reveal tilt">
+        <div class="contact-left">
+          <h3>Ready for my next Android role.</h3>
+          <p>Open to opportunities in London &amp; remote across the UK. Let's talk about how I can contribute to your team.</p>
+          <div class="contact-links">
+            <a href="mailto:ritabind321@gmail.com" class="contact-link">
+              <span class="c-icon">✉️</span>
+              <div><div class="c-label">Email</div><div class="c-val">ritabind321@gmail.com</div></div>
+            </a>
+            <a href="tel:+44" class="contact-link">
+              <span class="c-icon">📞</span>
+              <div><div class="c-label">Phone</div><div class="c-val">+44-XXXXXXX</div></div>
+            </a>
+            <a href="https://www.linkedin.com/in/rita-bind-159591215" target="_blank" rel="noopener" class="contact-link">
+              <span class="c-icon">💼</span>
+              <div><div class="c-label">LinkedIn</div><div class="c-val">rita-bind-159591215</div></div>
+            </a>
+            <a href="https://github.com/ritacodergithub" target="_blank" rel="noopener" class="contact-link">
+              <span class="c-icon">💻</span>
+              <div><div class="c-label">GitHub</div><div class="c-val">ritacodergithub</div></div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <a href="mailto:ritabind321@gmail.com" class="big-cta">
+            <span>Say Hello</span>
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Rita Bind · Crafted with Kotlin energy ⚡</div>
+      <div class="foot-right">Designed &amp; built from scratch · Android Developer Portfolio</div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
