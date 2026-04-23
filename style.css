@@ -678,8 +678,9 @@ main { position: relative; z-index: 1; }
 /* ---------- Projects ---------- */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 480px));
   gap: 24px;
+  justify-content: center;
 }
 .project-card {
   overflow: hidden;

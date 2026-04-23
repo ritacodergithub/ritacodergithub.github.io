@@ -188,6 +188,7 @@
       'Kotlin · MVVM · Jetpack.',
       'Firebase enthusiast.',
       'Building mobile experiences.',
+      'AI-powered with Claude AI.',
     ];
     let pi = 0, ci = 0, deleting = false;
 
